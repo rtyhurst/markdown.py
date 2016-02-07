@@ -34,7 +34,7 @@ def run_markdown_file(input_text):
     temp_file = NamedTemporaryFile(delete=False)
     temp_file.write(input_text)
     temp_file.close()
-    interp_script_and_fileName = _interpreter_and_script
+    interp_script_and_fileName = list(_interpreter_and_script)
     interp_script_and_fileName.append(temp_file.name)
     pipe = Popen(interp_script_and_fileName, 
             stdout=PIPE, stderr=STDOUT)
