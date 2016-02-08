@@ -10,7 +10,7 @@ import os
 
 # This is here so there's one line to change if I want to swap 
 # out a different script, such as markdown.pl 
-_interpreter_and_script = ['python', 'markdown.py']
+_interpreter_and_script = ['python', os.getcwd()+'\\markdown.py']
 
 def run_markdown(input_text):
     """
